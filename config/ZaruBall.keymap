@@ -41,15 +41,6 @@
             bindings = <&mt RCTL LANG1>, <&mo RAISE>, <&mo 5>;
         };
    };
-
-  keymap {
-    default_layer {
-      bindings = <
-        &arrow_hold_layer_left &mo 3 &left_sticky     // ← で Layer 3
-        &arrow_hold_layer_right &mo 2 &right_sticky   // → で Layer 2
-      >;
-    };
-    };
 };
 
 &sl { release-after-ms = <250>; }; // time needed for double click (for mkp_exit_AML)
