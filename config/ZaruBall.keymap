@@ -41,23 +41,7 @@
             bindings = <&mt RCTL LANG1>, <&mo RAISE>, <&mo 5>;
         };
 
-        gui_left: gui_left_behavior {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LEFT)>, <&kp LG(LEFT)>;
-
-            mods = <(MOD_LGUI | MOD_RGUI)>;
-            keep-mods = <(MOD_LGUI | MOD_RGUI)>;
-        };
-
-        gui_right: gui_right_behavior {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LG(RIGHT)>, <&kp LG(RIGHT)>;
-
-            mods = <(MOD_LGUI | MOD_RGUI)>;
-            keep-mods = <(MOD_LGUI | MOD_RGUI)>;
-        };
+        
     };
 };
 
