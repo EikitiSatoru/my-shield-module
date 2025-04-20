@@ -40,8 +40,6 @@
             tapping-term-ms = <200>;
             bindings = <&mt RCTL LANG1>, <&mo RAISE>, <&mo 5>;
         };
-
-        
     };
 };
 
@@ -123,14 +121,14 @@
         raise_layer {
             display-name = "Raise";
             bindings = <
-&trans      &none  &none      &none           &none     &none                               &none             &none              &none         &none        &none          &none
-&trans      &none  &none      &none           &kp HOME  &kp LC(LS(HOME))                    &none             &none              &kp UP_ARROW  &kp PAGE_UP  &kp LEFT_ALT   &none
-&trans      &none  &none      &none           &kp END   &kp LS(LC(END))   &none             &none             &none              &kp LEFT      &none        &kp RIGHT      &kp LEFT_SHIFT    &none
-&trans      &none  &none      &none           &none     &none             &kp LG(DOWN)      &kp LG(UP_ARROW)  &none              &none         &kp DOWN     &kp PAGE_DOWN  &kp LEFT_CONTROL  &none
-&kp LG(F4)         &kp LG(D)  &lt 2 LG(HOME)  &trans    &lt 2 SPACE       &lt 2 LANGUAGE_1  &kp LG(RG(LEFT))  &kp LG(RG(RIGHT))                                            &trans
+&trans      &none  &none      &none           &none     &none                               &none             &none          &none         &none        &none          &none
+&trans      &none  &none      &none           &kp HOME  &kp LC(LS(HOME))                    &none             &none          &kp UP_ARROW  &kp PAGE_UP  &kp LEFT_ALT   &none
+&trans      &none  &none      &none           &kp END   &kp LS(LC(END))   &none             &none             &none          &kp LEFT      &none        &kp RIGHT      &kp LEFT_SHIFT    &none
+&trans      &none  &none      &none           &none     &none             &kp LG(DOWN)      &kp LG(UP_ARROW)  &none          &none         &kp DOWN     &kp PAGE_DOWN  &kp LEFT_CONTROL  &none
+&kp LG(F4)         &kp LG(D)  &lt 2 LG(HOME)  &trans    &lt 2 SPACE       &lt 2 LANGUAGE_1  &kp RG(LEFT)      &kp RG(RIGHT)                                            &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_DOWN) LC(K_SCROLL_UP)>;
+            sensor-bindings = <&inc_dec_kp DOWN UP_ARROW>;
         };
 
         adjust_layer {
