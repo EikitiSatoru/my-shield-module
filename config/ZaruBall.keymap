@@ -54,7 +54,8 @@
                 &macro_pause_ms 400           // 0.4秒待機
                 &macro_release &kp LGUI       // GUI離す
             >;
- gui_rightarrow_macro: gui_rightarrow_macro {
+        };
+  gui_rightarrow_macro: gui_rightarrow_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <
