@@ -139,14 +139,14 @@
         raise_layer {
             display-name = "Raise";
             bindings = <
-&trans      &none  &none      &none           &none     &none                               &none             &none          &none         &none        &none          &none
-&trans      &none  &none      &none           &kp HOME  &kp LC(LS(HOME))                    &none             &none          &kp UP_ARROW  &kp PAGE_UP  &kp LEFT_ALT   &none
-&trans      &none  &none      &none           &kp END   &kp LS(LC(END))   &none             &none             &none          &kp LEFT      &none        &kp RIGHT      &kp LEFT_SHIFT    &none
-&trans      &none  &none      &none           &none     &none             &kp LG(DOWN)      &kp LG(UP_ARROW)  &none          &none         &kp DOWN     &kp PAGE_DOWN  &kp LEFT_CONTROL  &none
-&kp LG(F4)         &kp LG(D)  &lt 2 LG(HOME)  &trans    &lt 2 SPACE       &lt 2 LANGUAGE_1  &kp LG(LEFT)      &kp LG(RIGHT)                                            &trans
+&trans      &none  &none      &none           &none     &none                               &none             &none              &none         &none        &none          &none
+&trans      &none  &none      &none           &kp HOME  &kp LC(LS(HOME))                    &none             &none              &kp UP_ARROW  &kp PAGE_UP  &kp LEFT_ALT   &none
+&trans      &none  &none      &none           &kp END   &kp LS(LC(END))   &none             &none             &none              &kp LEFT      &none        &kp RIGHT      &kp LEFT_SHIFT    &none
+&trans      &none  &none      &none           &none     &none             &kp LG(DOWN)      &kp LG(UP_ARROW)  &none              &none         &kp DOWN     &kp PAGE_DOWN  &kp LEFT_CONTROL  &none
+&kp LG(F4)         &kp LG(D)  &lt 2 LG(HOME)  &trans    &lt 2 SPACE       &lt 2 LANGUAGE_1  &kp LG(RG(LEFT))  &kp LG(RG(RIGHT))                                            &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
+            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_DOWN) LC(K_SCROLL_UP)>;
         };
 
         adjust_layer {
@@ -159,7 +159,7 @@
 &studio_unlock         &none  &trans  &trans  &trans  &trans  &lt 3 LANGUAGE_2  &studio_unlock                                               &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         mouse_layer {
