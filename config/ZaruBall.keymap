@@ -40,6 +40,34 @@
             tapping-term-ms = <200>;
             bindings = <&mt RCTL LANG1>, <&mo RAISE>, <&mo 5>;
         };
+ gui_leftarrow_macro: gui_leftarrow_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &macro_press &kp LGUI         // GUIホールド
+                &macro_pause_ms 200           // 0.2秒待機
+
+                &macro_press &kp LEFT        // 矢印押す
+                &macro_pause_ms 500           // 0.5秒ホールド
+                &macro_release &kp LEFT      // 矢印離す
+
+                &macro_pause_ms 400           // 0.4秒待機
+                &macro_release &kp LGUI       // GUI離す
+            >;
+ gui_rightarrow_macro: gui_rightarrow_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &macro_press &kp LGUI         // GUIホールド
+                &macro_pause_ms 200           // 0.2秒待機
+
+                &macro_press &kp RIGHT        // 矢印押す
+                &macro_pause_ms 500           // 0.5秒ホールド
+                &macro_release &kp RIGHT      // 矢印離す
+
+                &macro_pause_ms 400           // 0.4秒待機
+                &macro_release &kp LGUI       // GUI離す
+            >;
     };
 };
 
@@ -125,7 +153,7 @@
 &trans      &none  &none      &none           &kp HOME  &kp LC(LS(HOME))                    &none             &none          &kp UP_ARROW  &kp PAGE_UP  &kp LEFT_ALT   &none
 &trans      &none  &none      &none           &kp END   &kp LS(LC(END))   &none             &none             &none          &kp LEFT      &none        &kp RIGHT      &kp LEFT_SHIFT    &none
 &trans      &none  &none      &none           &none     &none             &kp LG(DOWN)      &kp LG(UP_ARROW)  &none          &none         &kp DOWN     &kp PAGE_DOWN  &kp LEFT_CONTROL  &none
-&kp LG(F4)         &kp LG(D)  &lt 2 LG(HOME)  &trans    &lt 2 SPACE       &lt 2 LANGUAGE_1  &kp RG(LEFT)      &kp RG(RIGHT)                                            &trans
+&kp LG(F4)         &kp LG(D)  &lt 2 LG(HOME)  &trans    &lt 2 SPACE       &lt 2 LANGUAGE_1  &gui_leftarrow_macro      &gui_rightarrow_macro                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP_ARROW>;
