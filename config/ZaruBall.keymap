@@ -40,6 +40,50 @@
             tapping-term-ms = <200>;
             bindings = <&mt RCTL LANG1>, <&mo RAISE>, <&mo 5>;
         };
+ // Sticky LEFT key (←)
+    left_sticky: behavior_sticky_key {
+      compatible = "zmk,behavior-sticky-key";
+      label = "STK_LEFT";
+      #binding-cells = <0>;
+      release-after-ms = <400>;  // タップ→ホールドの猶予時間
+      sticky-behavior = <&kp LEFT>;
+    };
+
+    // Sticky RIGHT key (→)
+    right_sticky: behavior_sticky_key {
+      compatible = "zmk,behavior-sticky-key";
+      label = "STK_RIGHT";
+      #binding-cells = <0>;
+      release-after-ms = <400>;
+      sticky-behavior = <&kp RIGHT>;
+    };
+
+    // Hold-tap for LEFT: hold = Layer 3, tap = LEFT (sticky)
+    arrow_hold_layer_left: behavior_hold_tap {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LT_LEFT_LAYER3";
+      flavor = "hold-preferred";
+      tapping-term-ms = <220>;
+      quick-tap-ms = <300>;
+    };
+
+    // Hold-tap for RIGHT: hold = Layer 2, tap = RIGHT (sticky)
+    arrow_hold_layer_right: behavior_hold_tap {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LT_RIGHT_LAYER2";
+      flavor = "hold-preferred";
+      tapping-term-ms = <220>;
+      quick-tap-ms = <300>;
+    };
+  };
+
+  keymap {
+    default_layer {
+      bindings = <
+        &arrow_hold_layer_left &mo 3 &left_sticky     // ← で Layer 3
+        &arrow_hold_layer_right &mo 2 &right_sticky   // → で Layer 2
+      >;
+    };
     };
 };
 
