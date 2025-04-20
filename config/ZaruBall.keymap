@@ -40,6 +40,17 @@
             tapping-term-ms = <200>;
             bindings = <&mt RCTL LANG1>, <&mo RAISE>, <&mo 5>;
         };
+
+        test: test {
+            compatible = "zmk,behavior-sticky-key";
+            label = "TEST";
+            bindings = <&to>;
+            #binding-cells = <1>;
+            release-after-ms = <100>;
+            quick-release;
+            lazy;
+            ignore-modifiers;
+        };
     };
 };
 
