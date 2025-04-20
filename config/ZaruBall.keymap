@@ -125,8 +125,8 @@
             bindings = <
 &kp GRAVE         &kp F1  &kp F2        &kp F3        &kp F4            &kp F5                         &kp F6      &kp F7       &kp F8  &kp F9     &kp F10  &kp BACKSPACE
 &kp ESCAPE        &kp Q   &kp W         &kp E         &kp R             &kp T                          &kp Y       &kp U        &kp I   &kp O      &kp P    &kp MINUS
-&kp TAB           &kp A   &kp S         &kp D         &kp F             &kp G        &lt 3 DOWN        &to 3       &kp H        &kp J   &kp K      &kp L    &mt LEFT_SHIFT SEMICOLON  &kp ENTER
-&kp LSHFT         &kp Z   &kp X         &kp C         &kp V             &kp B        &kp BACKSPACE     &kp DELETE  &kp N        &kp M   &kp COMMA  &kp DOT  &kp FSLH                  &kp LEFT_SHIFT
+&kp TAB           &kp A   &kp S         &kp D         &kp F             &kp G        &lt 3 DOWN        &to 3       &kp H        &kp J   &kp K      &kp L    &mt LEFT_SHIFT LS(SEMICOLON)  &kp ENTER
+&kp LSHFT         &kp Z   &kp X         &kp C         &kp V             &kp B        &kp BACKSPACE     &kp DELETE  &kp N        &kp M   &kp COMMA  &kp DOT  &kp FSLH                      &kp LEFT_SHIFT
 &kp LEFT_CONTROL          &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 LANGUAGE_2  &lt 2 SPACE  &lt 5 LANGUAGE_1  &lt 1 LEFT  &lt 2 RIGHT                              &kp RIGHT_CONTROL
             >;
 
