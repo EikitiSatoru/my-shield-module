@@ -136,11 +136,11 @@
         lower_layer {
             display-name = "Lower";
             bindings = <
-&trans          &kp LA(F1)        &kp LA(F2)        &kp LA(F3)        &kp LA(F4)        &kp LA(F5)                                &kp LA(F6)        &kp LA(F7)         &kp LA(F8)     &kp LA(F9)         &kp LA(F10)           &kp EQUAL
-&trans          &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                &kp LS(NUMBER_6)  &kp LS(N7)         &kp LS(N8)     &kp LS(N9)         &kp LEFT_BRACKET      &kp INT_YEN
-&kp LC(TAB)     &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp N5            &kp PG_UP               &kp LPAR          &kp NUMBER_6       &kp N7         &kp N8             &kp N9                &kp N0             &kp SEMICOLON
-&trans          &kp LC(Z)         &kp LC(X)         &kp LC(C)         &kp LC(RIGHT)     &kp LG(V)         &kp LC(LG(DOWN_ARROW))  &kp RPAR          &kp RIGHT_BRACE    &kp BACKSLASH  &kp LS(LESS_THAN)  &kp LS(GREATER_THAN)  &kp LS(INT_RO)     &kp INT_RO
-&kp LC(LG(F4))                    &kp LC(LG(D))     &kp LG(TAB)       &trans            &lt 1 INT_HENKAN  &lt 1 INT_MUHENKAN      &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                                          &kp RIGHT_CONTROL
+&trans          &kp LA(F1)        &kp LA(F2)        &kp LA(F3)        &kp LA(F4)        &kp LA(F5)                            &kp LA(F6)        &kp LA(F7)         &kp LA(F8)     &kp LA(F9)         &kp LA(F10)           &kp EQUAL
+&trans          &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                            &kp LS(NUMBER_6)  &kp LS(N7)         &kp LS(N8)     &kp LS(N9)         &kp LEFT_BRACKET      &kp INT_YEN
+&kp LC(TAB)     &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp N5            &kp PAGE_DOWN       &kp PAGE_UP       &kp NUMBER_6       &kp N7         &kp N8             &kp N9                &kp N0             &kp SEMICOLON
+&trans          &kp LC(Z)         &kp LC(X)         &kp LC(C)         &kp LC(V)         &kp LG(V)         &kp DOWN            &kp UP_ARROW      &kp RIGHT_BRACE    &kp BACKSLASH  &kp LS(LESS_THAN)  &kp LS(GREATER_THAN)  &kp LS(INT_RO)     &kp INT_RO
+&kp LC(LG(F4))                    &kp LC(LG(D))     &kp LG(TAB)       &trans            &lt 1 INT_HENKAN  &lt 1 INT_MUHENKAN  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                                          &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
