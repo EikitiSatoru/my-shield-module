@@ -40,37 +40,37 @@
             tapping-term-ms = <200>;
             bindings = <&mt RCTL LANG1>, <&mo RAISE>, <&mo 5>;
         };
- gui_leftarrow_macro: gui_leftarrow_macro {
+
+        gui_leftarrow_macro: gui_leftarrow_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <
-                &macro_press &kp LGUI         // GUIホールド
-                &macro_pause_ms 200           // 0.2秒待機
-
-                &macro_press &kp LEFT        // 矢印押す
-                &macro_pause_ms 500           // 0.5秒ホールド
-                &macro_release &kp LEFT      // 矢印離す
-
-                &macro_pause_ms 400           // 0.4秒待機
-                &macro_release &kp LGUI       // GUI離す
+                &macro_press &kp LGUI
+                &macro_pause_ms 200
+                &macro_press &kp LEFT
+                &macro_pause_ms 500
+                &macro_release &kp LEFT
+                &macro_pause_ms 400
+                &macro_release &kp LGUI
             >;
         };
-  gui_rightarrow_macro: gui_rightarrow_macro {
+
+        gui_rightarrow_macro: gui_rightarrow_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <
-                &macro_press &kp LGUI         // GUIホールド
-                &macro_pause_ms 200           // 0.2秒待機
-
-                &macro_press &kp RIGHT        // 矢印押す
-                &macro_pause_ms 500           // 0.5秒ホールド
-                &macro_release &kp RIGHT      // 矢印離す
-
-                &macro_pause_ms 400           // 0.4秒待機
-                &macro_release &kp LGUI       // GUI離す
+                &macro_press &kp LGUI
+                &macro_pause_ms 200
+                &macro_press &kp RIGHT
+                &macro_pause_ms 500
+                &macro_release &kp RIGHT
+                &macro_pause_ms 400
+                &macro_release &kp LGUI
             >;
+        };
     };
 };
+
 
 &sl { release-after-ms = <250>; }; // time needed for double click (for mkp_exit_AML)
 / {
