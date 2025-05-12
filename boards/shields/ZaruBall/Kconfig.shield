@@ -4,3 +4,9 @@ config SHIELD_ZARUBALL_LEFT
 
 config SHIELD_ZARUBALL_RIGHT
 	def_bool $(shields_list_contains,ZaruBall_right)
+
+config PMW3610_MOVEMENT_THRESHOLD
+    int "Movement threshold for PMW3610"
+    default 20
+    help
+      Threshold below which movement will be ignored by the PMW3610 driver.
