@@ -29,3 +29,10 @@ config SPI
     default y
 
 endif
+
+if SHIELD_ZARUBALL_RIGHT
+
+config PMW3610_MOVEMENT_THRESHOLD
+    default 20
+
+endif
